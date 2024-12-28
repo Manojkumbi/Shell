@@ -3,6 +3,7 @@
 
 
 fruits=( "Apple" "Orange" "Banana" "Sapota" )
+
 fruits[3]='Green Apple'
 for fruit in ${fruits[@]}
 do
