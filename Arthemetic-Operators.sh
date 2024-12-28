@@ -1,9 +1,4 @@
 #!/bin/bash
-#Purpose: Arthemetic Operators
-#Version:1.0
-#Created Date: Wed May 9 21:41:53 IST 2018
-#Modified Date:
-#Author: kumaraswamy s
 # START #
 
 echo -e "Please enter some value: \c"
