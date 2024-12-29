@@ -5,8 +5,12 @@
 #Author: KUMARASWAMY S
 #START#
 
-DIR="$(dirname "$0")"
+DIR='.'
 echo $DIR
 echo "Monitoring changes under directory: $WATCHED_ROOT_DIR"
-echo` inotifywait -m -r -e create -e delete -e modify $DIR`
+inotifywait -m -r -e create -e delete -e modify $DIR| while read path action file
+do
+	echo "Detected $path $action on $file"
+    
+done
 #END
