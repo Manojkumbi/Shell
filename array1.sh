@@ -1,7 +1,7 @@
 #!/bin/bash
 # START #
 
-
+echo "hi"
 fruits=( "Apple" "Orange" "Banana" "Sapota" )
 
 
