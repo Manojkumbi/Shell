@@ -7,7 +7,8 @@
 
 DIR='.'
 echo $DIR
-echo "Monitoring changes under directory: $WATCHED_ROOT_DIR"
+echo "Monitoring changes under directory: $DIR"
+
 inotifywait -m -r -e create -e delete -e modify $DIR| while read path action file
 do
 	echo "Detected $path $action on $file"
